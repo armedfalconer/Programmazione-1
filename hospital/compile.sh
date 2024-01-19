@@ -1,0 +1,1 @@
+gcc -o main main.c lib/hospital.c && ./main
