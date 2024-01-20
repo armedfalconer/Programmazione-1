@@ -179,7 +179,9 @@ void readFromFile(QueueNode** head, char* fileName) {
         }
        
         Customer* c = initCustomer(name, surname, age, priority);
-        enqueue(head, c);        
+        enqueue(head, c);
+        free(name);
+        free(surname);
     }
 }
 
